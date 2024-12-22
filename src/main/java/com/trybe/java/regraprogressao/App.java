@@ -31,9 +31,14 @@ public class App {
       pesos[i - 1] = nota;
     }
 
-    //    for (int peso : pesos) {
-    //      System.out.println(peso);
-    //    }
+    int total = 0;
+    for (int peso : pesos) {
+      total += peso;
+    }
+
+    if (total != 100) {
+      System.out.println("A soma dos pesos é diferente de 100!");
+    }
 
     scn.close();
   }
