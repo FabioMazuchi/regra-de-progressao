@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class App {
 
   /**
-   * Metodo main.
+   * Método main.
    */
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
@@ -17,6 +17,7 @@ public class App {
     System.out.println("Digite a quantidade de atividades para cadastrar:");
     input = scn.nextLine();
     int qtdAtividades = Integer.parseInt(input);
+    int[] pesos = new int[qtdAtividades];
 
     for (int i = 1; i <= qtdAtividades; i++) {
       System.out.println("Digite o nome da atividade " + i + ":");
@@ -24,7 +25,15 @@ public class App {
       System.out.println("Digite o peso da atividade " + i + ":");
       input = scn.nextLine();
       int peso = Integer.parseInt(input);
+      System.out.println("Digite a nota obtida para " + nome + ":");
+      input = scn.nextLine();
+      int nota = Integer.parseInt(input);
+      pesos[i - 1] = nota;
     }
+
+    //    for (int peso : pesos) {
+    //      System.out.println(peso);
+    //    }
 
     scn.close();
   }
