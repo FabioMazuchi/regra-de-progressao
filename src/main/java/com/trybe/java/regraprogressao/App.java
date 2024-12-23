@@ -1,7 +1,6 @@
 package com.trybe.java.regraprogressao;
 
 import java.util.Scanner;
-import javax.sound.midi.Soundbank;
 
 /**
  * App.
